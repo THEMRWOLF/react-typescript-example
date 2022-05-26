@@ -1,0 +1,10 @@
+# https://prettier.io/docs/en/options.html
+
+useTabs: false
+semi: false
+singleQuote: true
+jsxSingleQuote: true
+bracketSpacing: true
+bracketSameLine: true
+arrowParens: 'avoid'
+endOfLine: lf
