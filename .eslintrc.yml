@@ -21,3 +21,12 @@ plugins:
   - react
   - '@typescript-eslint'
 rules: {}
+
+# Add Vitest
+overrides:
+  [
+    {
+      files: ['*.spec.tsx', '*.test.tsx'],
+      rules: { no-undef: off, no-unused-vars: off },
+    },
+  ]

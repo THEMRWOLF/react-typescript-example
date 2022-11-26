@@ -11,18 +11,22 @@
     "preview": "vite preview",
     "format": "prettier --write ./**/*.{js,ts,tsx}",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
     "@vitejs/plugin-react": "^2.2.0",
+    "@vitest/ui": "^0.25.3",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
@@ -31,11 +35,13 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.11",
     "gh-pages": "^4.0.0",
+    "jsdom": "^20.0.3",
     "prettier": "^2.8.0",
     "sass": "^1.56.1",
     "typescript": "^4.9.3",
     "vite": "^3.2.4",
     "vite-plugin-pwa": "^0.13.3",
-    "vite-tsconfig-paths": "^3.6.0"
+    "vite-tsconfig-paths": "^3.6.0",
+    "vitest": "^0.25.3"
   }
 }

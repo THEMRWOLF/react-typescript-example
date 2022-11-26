@@ -1,3 +1,6 @@
+/// <reference types="vitest" />
+/// <reference types="Vite/client" />
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -14,4 +17,10 @@ export default defineConfig({
     tsconfigPaths(), // Add Custom Paths for imports
     VitePWA({ registerType: 'autoUpdate' }), // Add PWA functionality
   ],
+
+  // Add Vitest
+  test: {
+    environment: 'jsdom',
+    globals: true,
+  },
 })
